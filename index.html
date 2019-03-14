@@ -1,0 +1,96 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Displaying Rows & Columns</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="row blue">
+			<div class="color yellow" id="timer">
+			
+			</div>
+			
+			<div class="title orange">
+				<img src="image/title.png" width="100%" height="100%">
+			</div>
+			<!--this code shows the lock icon and when the image is clicked it calls on the function in Javascript to switch to a key and go to the next webpage -->
+			<div class="color yellow">
+				<img src="image/lock.jpg" width="100%" height="100%" id="lock" onClick="checkConfiguration (this)">
+				<a href="https://williamwebster1.github.io/Congrats/"><img src="image/key.png" class="restrict-img-size" id="key"/></a>
+			</div>	
+		</div>
+		
+		<div class="row red">
+			<div class="color yellow">
+				<img src="image/r.png" width="100%" height="100%">
+			</div>
+			
+			<div class="title orange">
+				<div class="wire red">
+					<img src="image/red1r1.jpg" width="100%" height="100%" onClick="nextImageR1 (this)" id="red1"/>
+				</div>
+				<div class="wire purple">
+					<img src="image/red2r3.jpg" width="100%" height="100%" onClick="nextImageR2 (this)" id="red2"/>					
+				</div>
+				<div class="wire blue">
+					<img src="image/red3r1.jpg" width="100%" height="100%" onClick="nextImageR3 (this)" id="red3"/>				
+				</div>	
+			</div>
+			
+			<div class="color yellow">
+				<img src="image/r.png" width="100%" height="100%">			
+			</div>	
+		</div>
+				
+		<div class="row purple">
+			<div class="color yellow">
+				<img src="image/b.png" width="100%" height="100%">			
+			</div>
+			
+			<div class="title orange">
+				<div class="wire red">
+					<img src="image/blue1r2.jpg" width="100%" height="100%" onClick="nextImageB1 (this)" id="blue1"/>				
+				</div>
+				<div class="wire purple">
+					<img src="image/blue2r1.jpg" width="100%" height="100%" onClick="nextImageB2 (this)" id="blue2"/>				
+				</div>
+				<div class="wire blue">
+					<img src="image/blue3r2.jpg" width="100%" height="100%" onClick="nextImageB3 (this)" id="blue3"/>						
+				</div>			
+			</div>
+			
+			<div class="color yellow">
+				<img src="image/b.png" width="100%" height="100%">			
+			</div>
+		</div>			
+		<div class="row green">
+			<div class="color yellow">
+				<img src="image/g.png" width="100%" height="100%">			
+			</div>
+			
+			<div class="title orange">
+				<div class="wire red">
+					<img src="image/green1r2.jpg" width="100%" height="100%" onClick="nextImageG1 (this)" id="green1"/>						
+				</div>
+				<div class="wire purple">
+					<img src="image/green2.jpg" width="100%" height="100%" onClick="nextImageG2 (this)" id="green2"/>					
+				</div>
+				<div class="wire blue">
+					<img src="image/green3r1.jpg" width="100%" height="100%" onClick="nextImageG3 (this)" id="green3"/>					
+				</div>				
+			</div>
+			
+			<div class="color yellow">
+				<img src="image/g.png" width="100%" height="100%">			
+			</div>		
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
